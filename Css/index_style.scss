@@ -1,3 +1,141 @@
+@keyframes "heart" {
+	0% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	10% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	20% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	30% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	40% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	50% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	60% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	70% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	80% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	90% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	100% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+}
+@-webkit-keyframes "heart" {
+	0% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	10% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 10%, white 10%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	20% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 20%, white 20%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	30% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 30%, white 30%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	40% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 40%, white 40%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	50% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 50%, white 50%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	60% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 60%, white 60%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	70% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 70%, white 70%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	80% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 80%, white 80%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	90% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 90%, white 90%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+	100% {
+		background: linear-gradient(0deg, #FF79DA, #9356DC 100%);
+		-webkit-background-clip: text;
+		color: transparent;
+		font-weight: bold;
+	}
+}
+/*pied de page*/
+/*loading spinner*/
 @keyframes "rotate" {
 	0% {
 		transform: translate(-50%, -50%) rotateZ(0deg);
@@ -302,16 +440,19 @@ button {
 	height: 54px;
 	box-shadow: 1px 1px 8px darkgrey;
 	transition: filter 3s,box-shadow 4s;
-	&:hover {
+	&:active {
 		filter: brightness(1.75);
 		box-shadow: 3px 3px 10px black;
+		font-weight: bold;
+		color: black;
 	}
 }
 .search_phone {
 	color: white;
-	margin-left: 57px;
+	margin: 0 auto;
 	margin-top: 5%;
 	cursor: pointer;
+	display: block;
 	b {
 		font-size: 16px;
 	}
@@ -447,7 +588,8 @@ h2 {
 	bottom: 33px;
 	font-size: 28px;
 	&::before {
-		transition: color 1s ease-out;
+		transition: heart 1s 0s ease-out both;
+		-webkit-transition: heart 1s 0s ease-out both;
 	}
 	&:active {
 		&::before {
@@ -589,7 +731,6 @@ footer {
 		margin-top: 10%;
 	}
 	.search_phone {
-		margin-left: 151px;
 		width: 65%;
 	}
 	#fonctionnement {
@@ -647,13 +788,15 @@ footer {
 		margin-top: 4%;
 	}
 	.search_phone {
-		margin-left: 323px;
 		width: 60%;
+		margin-top: 2%;
 	}
 	button {
 		&:hover {
 			filter: brightness(1.75);
 			box-shadow: 3px 3px 10px black;
+			font-weight: bold;
+			color: black;
 		}
 	}
 	aside {
@@ -663,6 +806,9 @@ footer {
 	#fonctionnement {
 		width: 98%;
 		margin-bottom: 35px;
+	}
+	.font_title {
+		font-size: 28px;
 	}
 	.liste_function {
 		margin-left: 8px;
@@ -676,7 +822,8 @@ footer {
 	}
 	h2 {
 		padding-top: 35px;
-		font-size: 25px;
+		font-size: 28px;
+		margin-left: 44px;
 	}
 	#resto_display {
 		width: 100%;
@@ -684,7 +831,7 @@ footer {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-left: 0px;
+		margin-left: 6%;
 		padding-bottom: 30px;
 	}
 	.resto_card {
@@ -697,19 +844,19 @@ footer {
 			transform: scale(1.1);
 		}
 	}
-	.new {
-		right: 18px;
-		right: 107px;
-	}
 	.fa-heart {
 		&:hover {
 			font-weight: bold;
 			background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 			color: transparent;
 			background-clip: text;
+			animation: heart 1s 0s forwards;
 			-webkit-background-clip: text;
 			-webkit-text-stroke: unset;
 		}
+	}
+	.new {
+		right: 7%;
 	}
 	footer {
 		width: 101%;
@@ -717,7 +864,7 @@ footer {
 		padding-bottom: 20px;
 	}
 	.logo_footer {
-		font-size: 20px;
+		font-size: 24px;
 		margin-bottom: 2px;
 	}
 	.foot_column {
@@ -725,6 +872,7 @@ footer {
 			padding-bottom: 2px;
 		}
 		li {
+			margin-top: 2%;
 			&:hover {
 				font-weight: bold;
 			}
