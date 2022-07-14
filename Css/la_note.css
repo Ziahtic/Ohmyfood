@@ -1,0 +1,584 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin:0px;
+    width:100%;
+}
+
+.background{
+    background-image: url(../ressources/la_note.jpg);
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: 0px -21px;
+    padding-right: 7px;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    color:black
+}
+
+h1,h4{
+    font-family: 'Shrikhand', cursive;
+    text-align: left;
+}
+
+.container{
+    max-width : 1440px;
+    margin : 0 auto; 
+}
+
+/*en tête*/
+header{
+    background-color: white;
+    padding: 15px 15px 15px 0px;
+    margin-right: -7px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+header i{
+    margin-top: 10px;
+}
+
+.header__img{
+    width: 40%;
+}
+
+/*flêche de retour au menu d'acceuil*/
+.fa-arrow-left {
+    font-size: 22px;
+    margin-left: -368%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*titre et restaurant*/
+.main__background{
+    border-radius: 23px 23px 0px 0px;
+    background-color: #f2f2f2;
+    margin-top: 68%;
+    margin-right: -7px;   
+}
+
+.restaurant__title{
+    position: relative;
+}
+
+.restaurant__name{
+    font-size: 24px;
+    margin-left: 5%;
+    padding-top: 7%;
+}
+
+#restaurant__heart{
+    font-size: 24px;
+    position: absolute;
+    right: 41px;
+    top: 30px;
+}
+
+/*les plats*/
+legend{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+legend::after {
+    content: "";
+    background: #99E2D0;
+    width: 57%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 5%;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+}
+
+.choice__name--details{
+    display: flex;
+    flex-direction: column;
+    width: 104%;
+    font-size:13px;
+    background-color: white;
+    border-radius: 13px 13px 13px 13px;
+    padding: 10px 10px 8px 5px;
+    box-shadow: 4px 4px 15px lightgrey;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+input{
+    position: absolute;
+    left: -999px;
+}
+
+.choice__name--bold{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 1s;
+}
+
+.detail{
+    position: relative;
+}
+
+.choice__name--regular{
+    font-size: 13px;
+    font-weight: 300;
+    padding-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis ;
+    transition: 1s;
+}
+
+.choice__name--price{
+    font-weight: bold;
+    background: white;
+    position: absolute;
+    bottom: 1px;
+    right: 81px;
+    width:7%;
+    transform:translateX(64px);
+    transition: 1s;
+}
+
+
+.choice__name--icone{
+    background-color: #99E2D0;
+    padding: 23px 20px 10px 23px;
+    position: absolute;
+    border-radius: 0px 13px 13px 0px;
+    right: -12px;
+    bottom: -8px;
+    transform: translateX(72px);
+    transition:1s;
+}
+
+
+.fa-check{
+    color: #99E2D0;
+    background-color: white;
+    padding: 10px;
+    position:relative;
+    bottom:4px;
+    right: 3px;
+    border-radius:  17px 17px 17px 17px;   
+}
+
+button{
+    border: none;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 28px;
+    width: 50%;
+    height: 41px;
+}
+
+.order__button{
+    color: white;
+    margin-left: 25%;
+    margin-top:5% ;
+    margin-bottom: 14%;
+    box-shadow: 1px 1px 8px darkgrey;
+}
+
+button:active{
+    filter: brightness(1.75);
+    box-shadow: 3px 3px 10px black; 
+    font-weight: bold;   
+    color: black;  
+}
+
+/*pied de page*/
+footer{
+    background-color: rgba(33, 33, 33, 0.945);
+    height: 100%;
+    width: 104%;
+    padding-bottom: 20px;
+    margin-left:-7px;
+}
+
+.foot__column{
+    margin-left: 10px;
+}
+.foot__column a{
+    color:white;
+    font-size:16px;
+} 
+
+.foot__column li{
+    margin-top: 3%;
+}
+
+.foot__column ul{
+    list-style: none;
+    margin-top: 5px;
+    padding-top: 3px;
+    padding-left: 25px;
+}
+
+.logo__footer{
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-top: 0px;
+    margin-left: 28px;
+    padding-top: 22px;
+}
+
+.foot__column i{
+    font-size: 14px;
+    margin-right: 9px;
+}
+
+
+/*création et animation en décalé de chaque plat à l'ouverture de la page*/
+.choice__animation-1 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+}
+
+  .choice__animation-2 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+}
+
+  .choice__animation-3 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 2.4s;
+    animation-duration: 2.4s;
+}
+
+  .choice__animation-4 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 3.2s;
+    animation-duration: 3.2s;
+}
+
+  .choice__animation-5 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+  .choice__animation-6 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 4.8s;
+    animation-duration: 4.8s;
+}
+
+  .choice__animation-7 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 5.6s;
+    animation-duration: 5.6s;
+}
+
+  .choice__animation-8 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 6.4s;
+    animation-duration: 6.4s;
+}
+
+  .choice__animation-9 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 7.2s;
+    animation-duration: 7.2s;
+}
+
+.choice__animation-10 {
+    -webkit-animation: dishes-display 0.8s 2s linear both;
+    animation: dishes-display 0.8s 2s linear both;
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+}
+
+@keyframes dishes-display {
+0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+}
+20% {
+    opacity: 0.3;
+}
+40% {
+    opacity: 0.4;
+}
+60% {
+    opacity: 0.5;
+}
+80% {
+    opacity: 0.6;
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+
+/*gestion du check*/
+  @media (max-width: 991px) {
+.choice__name:active .choice__name--icone {
+    margin-left: 50px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.choice__name:active .choice__name--price{
+    margin-left: 50px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); 
+}
+
+.choice__name:active .choice__name--regular{
+    display: inline-block;
+    width: 215px;
+}
+
+.choice__name:active .choice__name--bold{
+    display: inline-block;
+    width: 215px;
+}
+}
+
+@media (min-width: 992px) {
+.choice__name:hover .choice__name--icone {
+    margin-left: 50px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); 
+}
+  
+.choice__name:hover .choice__name--price{
+    margin-left: 50px;
+    -webkit-transform: translateX(0);
+    transform: translateX(0); 
+}
+
+.choice__name:hover {
+    -webkit-box-shadow: 10px 8px 10px #e7e7e7;
+    box-shadow: 10px 8px 10px #e7e7e7;
+    opacity: 0.9;
+}
+} 
+
+@media (max-width: 991px) {
+.choice__name:active .fa-check {
+    -webkit-animation: check_rotate 0.3s linear forwards;
+    animation: check_rotate 0.5s linear forwards;
+}
+}
+
+@media (min-width: 992px) {
+.choice__name:hover .fa-check {
+    -webkit-animation: check_rotate 0.3s linear forwards;
+    animation: check_rotate 0.5s linear forwards;
+}
+} 
+  
+@-webkit-keyframes check_rotate{
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);       
+}
+}
+
+@keyframes check_rotate {
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);  
+}
+100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);       
+}   
+}
+
+
+/*BEM de chaque plat*/
+.choice__name {
+    margin: auto;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: white;
+    margin-bottom: 15px;
+    padding-right: 25px;
+    border-radius: 17px;
+    -webkit-box-shadow: 12px 12px 150px #f5f5f5;
+    box-shadow: 12px 12px 150px #f5f5f5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*media queries tablette*/
+@media screen and (min-width: 768px){
+body{
+    width: 100%;
+}
+
+.header__img{
+    width: 50%; 
+}
+
+.restaurant__name{
+    padding-top: 3%;
+}
+
+.choice__name--icone{
+    right: 8px;
+}
+
+.choice__name:active .choice__name--bold{
+    display: inline-block;
+    width: 240px;
+}
+
+.choice__name:active .choice__name--regular{
+    display: inline-block;
+    width: 240px;
+}
+
+footer{
+    width: 102%;
+}
+
+
+}
+    
+/*media queries ordinateur*/
+@media screen and (min-width: 992px) {
+
+.fa-arrow-left {
+    font-size: 35px;
+}
+
+main{
+    width: 70%;
+    margin-left: 216px;
+}
+
+.main__background{
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 17%;
+    margin-bottom: 8%;
+}
+
+.restaurant__name{
+    padding-top: 10px;
+    margin-left: 38%;
+    margin-bottom: 64px;
+    font-size: 30px;
+}
+
+form{
+    margin-left: 20px;
+    justify-content: center;
+}
+
+fieldset{
+    width: 92%;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.detail{
+    margin-left: 214px;
+}
+
+.choice__name--icone{
+    right: -13px;
+}
+
+.choice__name:hover .choice__name--bold{
+    display: inline-block;
+    width: 180px;
+}
+
+.choice__name:hover .choice__name--regular{
+    display: inline-block;
+    width: 180px;
+}
+
+.order__button{
+    margin-bottom: 3%;
+}
+
+#order {
+    padding-bottom: 36px;
+}
+
+button:hover{
+    filter: brightness(1.75);
+        box-shadow: 3px 3px 10px black;
+        font-weight: bold;   
+        color: black;
+    }
+
+footer{
+    width: 101%;
+    height: auto;
+}
+
+.logo__footer{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+.foot__column li{
+    margin-top: 2%;
+}
+.foot__column li:hover {
+    font-weight: bold;
+}
+
+}
+
+@media screen and (min-width: 1324px){
+form{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+fieldset{
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+}

@@ -209,7 +209,7 @@ h2{
   max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding-bottom: 4px;
   margin-left: 2px;
 }
@@ -280,22 +280,18 @@ h2{
   display:none;
 }
 
-.fa-heart::before{ 
-  transition: heart 1s 0s ease-out both;
-  -webkit-transition: heart 1s 0s ease-out both;
-}
-
-.fa-heart:active::before{
+.fa-heart:hover{
   font-weight: bold;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color:transparent;
   background-clip: text;
+  animation: heart 1s 0s ease-out both;
+  -webkit-animation: heart 1s 0s ease-out both;
   -webkit-background-clip: text;
   -webkit-text-stroke:unset; 
 }
 
 /*animation coeur*/
-
 @keyframes heart {
   0% {
     background: linear-gradient(0deg, #FF79DA, #9356DC 0%, white 0%);

@@ -6,9 +6,10 @@ body{
 }
 
 .background{
-    background-image: url(ressources/la_note.jpg);
+    background-image: url(../ressources/la_francaise.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 105%;
+    background-position: 0px 64px;
     padding-right: 7px;
 }
 
@@ -58,7 +59,7 @@ header i{
 .main__background{
     border-radius: 23px 23px 0px 0px;
     background-color: #f2f2f2;
-    margin-top: 74%;
+    margin-top: 58%;
     margin-right: -7px;   
 }
 
@@ -506,13 +507,12 @@ main{
 }
 
 form{
-    display: flex;
-    flex-direction: row;
-    margin-left: 38px;
+    margin-left: 20px;
+    justify-content: center;
 }
 
 fieldset{
-    width: 100%;
+    width: 92%;
     margin-right: 4px;
     margin-left: 4px;
 }
@@ -567,4 +567,18 @@ footer{
     font-weight: bold;
 }
 
+}
+
+@media screen and (min-width: 1324px){
+form{
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+}
+
+fieldset{
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
 }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Css/normalize.css"/>
+        <script src="https://kit.fontawesome.com/a1f26d7245.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Css/A_la_francaise.css"/>
+        <title>A la française</title>
+    </head>
+
+    <body>
+        <div class="background">
+
+<!--logo et retour page d'accueil-->
+            <header>  
+                <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                    <img class="header__img" src="ressources/ohmyfood.png" alt="OhMyFood logo">
+                    
+            </header>
+            
+            
+            <main class="main__background">
+
+    <!--titre restaurant-->
+                <div class="restaurant__title">
+                    <h1 class="restaurant__name">À la française</h1>
+                    <i id="restaurant__heart" class="fa-regular fa-heart"></i>
+                </div>
+
+    <!--les plats-->
+                <form>
+                    <fieldset>
+                        <legend>Entrées</legend>
+                        <div class="choice__name choice__animation-1">
+                            <label class="choice__name--details">
+                                <input type="radio" id="entree_1" name="starter">
+                                <span class="display">
+                                    <span class="choice__name--bold">Tartare de poulpe acidulé</span>
+                                    <span class="choice__name--regular">Aux zests d'orange</span>
+                                    
+                                </span>
+                                <span class="detail">
+                                    <span class="choice__name--price">25€</span>
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>    
+                            </label>
+                        </div>     
+                        
+                        <div class="choice__name choice__animation-2">
+                            <label class="choice__name--details">
+                                <input type="radio" id="entree_2" name="starter">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Velouté de légumes d'antan</span>
+                                    <span class="choice__name--regular">Carotte, panais, topinambour</span>
+                                </span>    
+                                <span class="detail">
+                                    <span class="choice__name--price">35€</span>                                                                
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>
+                            </label>
+                        </div>    
+
+                        <div class="choice__name choice__animation-3">
+                            <label class="choice__name--details">
+                                <input type="radio" id="entree_3" name="starter">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Soupe à l'oignon</span>
+                                    <span class="choice__name--regular">Revisitée</span>
+                                </span>    
+                                <span class="detail">
+                                    <span class="choice__name--price">20€</span>                                                               
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>    
+                            </label>
+                        </div>    
+                        
+                    </fieldset>
+                
+                
+                
+                    <fieldset>
+                        <legend>Plats</legend>
+
+                        <div class="choice__name choice__animation-5">
+                            <label class="choice__name--details">
+                                <input type="radio" id="plat_1" name="main_course">
+                                <span class="display">
+                                    <span class="choice__name--bold">Coquilles Saint-Jacques</span>
+                                    <span class="choice__name--regular">Accompagnées d'une purée de panais</span>
+                                </span>    
+                                <span class="detail">   
+                                    <span class="choice__name--price">40€</span>                                                             
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span> 
+                                </span>           
+                            </label>
+                        </div> 
+                        
+                        <div class="choice__name choice__animation-6">
+                            <label class="choice__name--details">
+                                <input type="radio" id="plat_2" name="main_course">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Magret de canard</span>
+                                    <span class="choice__name--regular">Et parmentier de pommes de terres</span>
+                                </span>    
+                                <span class="detail">
+                                    <span class="choice__name--price">35€</span>                                                              
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>    
+                            </label>
+                        </div>    
+
+                        <div class="choice__name choice__animation-7">
+                            <label class="choice__name--details">
+                                <input type="radio" id="plat_3" name="main_course">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Pigeonneau d'Ille-et-Vilaine</Ille-et-Vilaine></span>
+                                    <span class="choice__name--regular"> Sur son lit de Gnocchis</span>
+                                </span>    
+                                <span class="detail"> 
+                                    <span class="choice__name--price">44€</span>                                                          
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>
+                            </label>
+                        </div>
+
+                    </fieldset>
+                
+                
+                
+                    <fieldset>
+                        <legend>Desserts</legend>
+
+                        <div class="choice__name choice__animation-8">
+                            <label class="choice__name--details">
+                                <input type="radio" id="dessert_1" name="dessert">
+                                <span class="display">
+                                    <span class="choice__name--bold">Pétales de violettes glacées</span>
+                                    <span class="choice__name--regular">Et purée de noisettes</span>
+                                    
+                                </span>
+                                <span class="detail">    
+                                    <span class="choice__name--price">18€</span>                           
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>    
+                            </label> 
+                        </div>
+                        
+                        <div class="choice__name choice__animation-9">
+                            <label class="choice__name--details">
+                                <input type="radio" id="dessert_2" name="dessert">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Fondant au chocolat</span>
+                                    <span class="choice__name--regular">Revisité</span>
+                                </span>    
+                                <span class="detail">
+                                    <span class="choice__name--price">22€</span>                                                               
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="choice__name choice__animation-10">
+                            <label class="choice__name--details">
+                                <input type="radio" id="dessert_3" name="dessert">
+                                <span class="display">
+                                    <span class="choice__name--bold"> Millefeuille croustillant</span>
+                                    <span class="choice__name--regular"> Myrtilles et pâte d'amande</span>
+                                </span>    
+                                <span class="detail">
+                                    <span class="choice__name--price">23€</span>                                                                
+                                    <span class="choice__name--icone"><i class="fa-solid fa-check"></i></span>
+                                </span>
+                            </label>
+                        </div>
+
+                    </fieldset>
+                </form>            
+                
+                <div id="order">
+                    <a href="#"></a>
+                    <button class="order__button">Commander</button>
+                </div>
+                    
+            </main>
+
+    <!--pied de page-->
+            <footer>
+                <section>
+                    <div class="foot__column">
+                        <h4 class="logo__footer"> Ohmyfood </h4>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-utensils"></i>Proposer un restaurant
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Mention légales</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:ohmyfood@gmail.com">Contact</a>
+                                </li>
+
+                            </ul>
+                    </div>
+                </section>            
+            </footer>       
+            </div>       
+    </body>
+</html>

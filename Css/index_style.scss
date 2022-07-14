@@ -531,7 +531,7 @@ h2 {
 	max-width: 1440px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	padding-bottom: 4px;
 	margin-left: 2px;
 }
@@ -587,19 +587,15 @@ h2 {
 	right: 20px;
 	bottom: 33px;
 	font-size: 28px;
-	&::before {
-		transition: heart 1s 0s ease-out both;
-		-webkit-transition: heart 1s 0s ease-out both;
-	}
-	&:active {
-		&::before {
-			font-weight: bold;
-			background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-			color: transparent;
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-stroke: unset;
-		}
+	&:hover {
+		font-weight: bold;
+		background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+		color: transparent;
+		background-clip: text;
+		animation: heart 1s 0s ease-out both;
+		-webkit-animation: heart 1s 0s ease-out both;
+		-webkit-background-clip: text;
+		-webkit-text-stroke: unset;
 	}
 }
 .fill_heart {
