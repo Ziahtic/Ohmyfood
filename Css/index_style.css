@@ -218,7 +218,7 @@ h2{
   width: 90%;
   height: 200px;
   margin-bottom: 25px;
-  margin-left: 18px;
+  margin-left: 1px;
   padding-bottom: 27px;
   background-color: white;    
   border-radius: 17px;
@@ -801,7 +801,11 @@ main{
 }
 
 #resto_display{
-  margin-left: 14px;
+  margin-left: 0px;
+}
+
+.resto_card{
+  margin-left: -14px;
 }
 
 footer{
