@@ -202,7 +202,7 @@ button{
     box-shadow: 1px 1px 8px darkgrey;
 }
 
-button:active{
+button:hover{
     filter: brightness(1.75);
     box-shadow: 3px 3px 10px black; 
     font-weight: bold;   
@@ -350,24 +350,24 @@ footer{
 
 /*gestion du check*/
   @media (max-width: 991px) {
-.choice__name:active .choice__name--icone {
+.choice__name:hover .choice__name--icone {
     margin-left: 50px;
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
-.choice__name:active .choice__name--price{
+.choice__name:hover .choice__name--price{
     margin-left: 50px;
     -webkit-transform: translateX(0);
     transform: translateX(0); 
 }
 
-.choice__name:active .choice__name--regular{
+.choice__name:hover .choice__name--regular{
     display: inline-block;
     width: 215px;
 }
 
-.choice__name:active .choice__name--bold{
+.choice__name:hover .choice__name--bold{
     display: inline-block;
     width: 215px;
 }
@@ -394,7 +394,7 @@ footer{
 } 
 
 @media (max-width: 991px) {
-.choice__name:active .fa-check {
+.choice__name:hover .fa-check {
     -webkit-animation: check_rotate 0.3s linear forwards;
     animation: check_rotate 0.5s linear forwards;
 }
@@ -464,12 +464,12 @@ body{
     right: 8px;
 }
 
-.choice__name:active .choice__name--bold{
+.choice__name:hover .choice__name--bold{
     display: inline-block;
     width: 240px;
 }
 
-.choice__name:active .choice__name--regular{
+.choice__name:hover .choice__name--regular{
     display: inline-block;
     width: 240px;
 }

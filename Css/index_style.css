@@ -106,7 +106,7 @@ button{
   transition: filter 3s,box-shadow 4s;
 }
 
-button:active{
+button:hover{
   filter: brightness(1.75);
   box-shadow: 3px 3px 10px black;
   font-weight: bold;   
